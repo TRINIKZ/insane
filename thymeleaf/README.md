@@ -1,3 +1,5 @@
+Integrantes: Victor Feitosa, Johnny Wen
+
 Projeto Cadastro e Gerenciamento de Usuários e Carros com Spring Boot e Thymeleaf
 Descrição
 Este projeto é uma aplicação web simples construída com Spring Boot e Thymeleaf, que permite gerenciar usuários e carros. Inclui funcionalidades como cadastro, edição, listagem, exclusão, autenticação básica e dashboard.
