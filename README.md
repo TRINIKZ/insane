@@ -65,12 +65,12 @@ src
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seuusuario/seuprojeto.git
+   git clone https://github.com/TRINIKZ/insane
    ```
 
 2. Acesse o diretório:
    ```bash
-   cd seuprojeto
+   cd insane
    ```
 
 3. Execute a aplicação (com Maven):
