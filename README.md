@@ -108,7 +108,7 @@ src
 
 ## 🧙‍♂️ Autor
 
-Desenvolvido por **Victor Feitosa, Johnny Wen** ✨  
+Desenvolvido por **Victor Feitosa, Johnny Zhen Wei Qi** ✨  
 Se curtir o projeto, deixe uma ⭐ no GitHub!
 
 ---
