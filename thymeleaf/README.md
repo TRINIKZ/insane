@@ -1,116 +1,118 @@
-Integrantes: Victor Feitosa, Johnny Wen
 
-Projeto Cadastro e Gerenciamento de Usuários e Carros com Spring Boot e Thymeleaf
-Descrição
-Este projeto é uma aplicação web simples construída com Spring Boot e Thymeleaf, que permite gerenciar usuários e carros. Inclui funcionalidades como cadastro, edição, listagem, exclusão, autenticação básica e dashboard.
+# 🚀 Projeto Spring Boot com Thymeleaf
 
-Funcionalidades
-Login e autenticação simples (sem criptografia, apenas para fins didáticos)
+Um sistema completo de gerenciamento de **Usuários 👤** e **Carros 🚗**, com autenticação, cadastro, edição e exclusão, utilizando **Spring Boot**, **Thymeleaf**, **JPA** e **H2**.
 
-Cadastro de usuários com validação de campos
+---
 
-Listagem, edição e exclusão de usuários
+## 🧱 Tecnologias Utilizadas
 
-Cadastro de carros com campos ano, modelo e potência
+- ☕ Spring Boot 3+
+- 🌿 Spring Data JPA
+- 🎨 Thymeleaf
+- 🗄️ H2 Database
+- 🧪 Jakarta Bean Validation
+- 💡 Lombok
 
-Listagem, edição e exclusão de carros
+---
 
-Dashboard básico após login
+## 📂 Estrutura do Projeto
 
-Pesquisa de usuários na listagem (implementada via JavaScript no front-end)
+```
+src
+├── main
+│   ├── java
+│   │   └── com.example.thymeleaf
+│   │       ├── UserModel.java 👤
+│   │       ├── CarModel.java 🚗
+│   │       ├── UserController.java 🧭
+│   │       ├── CarController.java 🧭
+│   │       ├── UserRepository.java 💾
+│   │       └── CarRepository.java 💾
+│   └── resources
+│       ├── templates
+│       │   ├── login.html 🔐
+│       │   ├── cadastro.html 📝
+│       │   ├── dashboard.html 📊
+│       │   ├── usuarios.html 👥
+│       │   ├── editar.html ✏️
+│       │   ├── carros.html 🚗
+│       │   ├── cadastro-carro.html 🧾
+│       │   └── editar-carro.html 🛠️
+│       └── static
+│           └── css
+│               └── style3.css 🎨
+```
 
-Layout responsivo com CSS separado para diferentes páginas
+---
 
-Tecnologias utilizadas
-Java 17+
+## 🧪 Funcionalidades
 
-Spring Boot
+### 👥 Usuários
+- Cadastro de novo usuário
+- Login com validação
+- Edição e exclusão
+- Visualização de todos os usuários
 
-Spring Data JPA (com Hibernate)
+### 🚗 Carros
+- Cadastro de carro (ano, modelo, potência)
+- Edição e exclusão
+- Listagem de todos os carros
 
-Thymeleaf
+---
 
-Banco de dados H2 (embutido, para testes) ou outro configurável
+## 🔑 Como Executar
 
-HTML5, CSS3, JavaScript
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seuusuario/seuprojeto.git
+   ```
 
-Estrutura do projeto
-swift
-Copiar
-Editar
-src/main/java/com/example/thymeleaf/
-  ├── controller/
-  │     ├── UserController.java
-  │     └── CarController.java
-  ├── model/
-  │     ├── UserModel.java
-  │     └── CarModel.java
-  ├── repository/
-  │     ├── UserRepository.java
-  │     └── CarRepository.java
-  └── Application.java  (classe principal Spring Boot)
+2. Acesse o diretório:
+   ```bash
+   cd seuprojeto
+   ```
 
-src/main/resources/
-  ├── templates/  (arquivos Thymeleaf .html)
-  │     ├── login.html
-  │     ├── cadastro.html
-  │     ├── usuarios.html
-  │     ├── editar.html
-  │     ├── carros.html
-  │     ├── cadastro-carro.html
-  │     ├── editar-carro.html
-  │     └── dashboard.html
-  └── static/
-        └── css/
-             ├── cadastro.css
-             ├── style2.css
-             └── style3.css
-Como executar
-Clone este repositório:
+3. Execute a aplicação (com Maven):
+   ```bash
+   ./mvnw spring-boot:run
+   ```
 
-bash
-Copiar
-Editar
-git clone https://github.com/trinikz/
+4. Acesse:
+   ```
+   http://localhost:8080
+   ```
 
-cd seu-projeto
-Configure o banco de dados no application.properties se necessário (por padrão usa H2 em memória).
+---
 
-Compile e execute a aplicação com Maven ou Gradle:
+## 💾 Banco de Dados H2
 
-bash
-Copiar
-Editar
-./mvnw spring-boot:run
-Acesse no navegador:
+- Console: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
+- JDBC URL: `jdbc:h2:mem:testdb`
+- User: `sa`
+- Password: *(vazio)*
 
-bash
-Copiar
-Editar
-http://localhost:8080/login
-Uso
-Para se cadastrar, acesse /cadastro
+---
 
-Para fazer login, acesse /login
+## 📊 Tabelas do Banco
 
-Após login bem sucedido, você será direcionado para o dashboard
+### users 👤
+| id | name | email | password |
+|----|------|-------|----------|
 
-Você pode navegar para as listas de usuários e carros, e gerenciar os registros (editar/excluir)
+### car_model 🚗
+| id | ano | modelo | potencia |
+|----|-----|--------|----------|
 
-A lista de usuários possui um campo de busca para filtrar nomes em tempo real
+---
 
-Melhorias futuras
-Implementar autenticação segura (ex: Spring Security + BCrypt)
+## 🧙‍♂️ Autor
 
-Paginação para listas grandes
+Desenvolvido por **[Seu Nome]** ✨  
+Se curtir o projeto, deixe uma ⭐ no GitHub!
 
-Validação e tratamento de erros no backend
+---
 
-Melhorar layout e usabilidade com frameworks CSS (Bootstrap, Tailwind)
+## 📜 Licença
 
-Integração com banco de dados externo (MySQL, PostgreSQL)
-
-Upload de fotos para carros e usuários
-
-Contato
-Para dúvidas ou sugestões, entre em contato via e-mail: trinikz@proton.me
+Este projeto está licenciado sob a [MIT License](LICENSE).
