@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style4.css}" />
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="'Bem-vindo, ' + ${nomeUsuario} + '!'">Bem-vindo!</h1>
+        <p>Escolha uma opção:</p>
+
+        <button class="btn" onclick="location.href='/usuarios'">Gerenciar Usuários</button>
+        <button class="btn" onclick="location.href='/carros'">Gerenciar Carros</button>
+    </div>
+</body>
+</html>

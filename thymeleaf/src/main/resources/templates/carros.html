@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Carros</title>
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<body>
+<div class="container">
+    <h1>Lista de Carros</h1>
+
+    <a class="btn" th:href="@{/cadastro-carro}">Cadastrar novo carro</a>
+
+    <!-- Campo de busca -->
+    <input type="text" id="searchInput" placeholder="Pesquisar carros..." onkeyup="searchTable()" style="margin: 15px 0; padding: 8px; width: 100%; max-width: 400px;">
+
+    <table id="carsTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ano</th>
+            <th>Modelo</th>
+            <th>Potência</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="car : ${cars}">
+            <td th:text="${car.id}"></td>
+            <td th:text="${car.ano}"></td>
+            <td th:text="${car.modelo}"></td>
+            <td th:text="${car.potencia}"></td>
+            <td>
+                <a class="btn-small danger" th:href="@{'/editar-carro/' + ${car.id}}">Editar</a>
+                <a class="btn-small danger" th:href="@{'/excluir-carro/' + ${car.id}}">Excluir</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function searchTable() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();
+        const table = document.getElementById('carsTable');
+        const trs = table.tBodies[0].getElementsByTagName('tr');
+
+        for (let i = 0; i < trs.length; i++) {
+            const tds = trs[i].getElementsByTagName('td');
+            let match = false;
+
+            for (let j = 0; j < tds.length - 1; j++) { // Ignorar coluna Ações
+                if (tds[j].textContent.toLowerCase().indexOf(filter) > -1) {
+                    match = true;
+                    break;
+                }
+            }
+
+            trs[i].style.display = match ? '' : 'none';
+        }
+    }
+</script>
+</body>
+</html>

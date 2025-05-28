@@ -1,0 +1,46 @@
+cars
+INSERT INTO car_model (ano, modelo, potencia) VALUES
+('2020', 'Toyota Corolla', '140cv'),
+('2021', 'Honda Civic', '150cv'),
+('2019', 'Ford Focus', '130cv'),
+('2018', 'Chevrolet Cruze', '144cv'),
+('2022', 'Volkswagen Jetta', '155cv'),
+('2023', 'Hyundai Elantra', '160cv'),
+('2020', 'Renault Fluence', '143cv'),
+('2021', 'Peugeot 208', '128cv'),
+('2017', 'Fiat Argo', '135cv'),
+('2019', 'Nissan Sentra', '140cv'),
+('2020', 'Mitsubishi Lancer', '160cv'),
+('2021', 'Kia Cerato', '150cv'),
+('2022', 'Chevrolet Onix', '116cv'),
+('2023', 'Toyota Yaris', '110cv'),
+('2018', 'Hyundai HB20', '105cv'),
+('2020', 'Ford Ka', '100cv'),
+('2019', 'Fiat Uno', '90cv'),
+('2021', 'Volkswagen Golf', '170cv'),
+('2022', 'Audi A3', '190cv'),
+('2023', 'BMW 320i', '184cv');
+
+users.
+INSERT INTO user_model (name, email, password) VALUES
+('Ana Souza', 'ana.souza@example.com', 'senha123'),
+('Bruno Lima', 'bruno.lima@example.com', 'senha123'),
+('Carla Mendes', 'carla.mendes@example.com', 'senha123'),
+('Diego Alves', 'diego.alves@example.com', 'senha123'),
+('Elaine Costa', 'elaine.costa@example.com', 'senha123'),
+('Felipe Rocha', 'felipe.rocha@example.com', 'senha123'),
+('Gabriela Dias', 'gabriela.dias@example.com', 'senha123'),
+('Henrique Martins', 'henrique.martins@example.com', 'senha123'),
+('Isabela Ferreira', 'isabela.ferreira@example.com', 'senha123'),
+('João Pedro', 'joao.pedro@example.com', 'senha123'),
+('Karen Ribeiro', 'karen.ribeiro@example.com', 'senha123'),
+('Lucas Moreira', 'lucas.moreira@example.com', 'senha123'),
+('Mariana Teixeira', 'mariana.teixeira@example.com', 'senha123'),
+('Nicolas Pinto', 'nicolas.pinto@example.com', 'senha123'),
+('Olívia Matos', 'olivia.matos@example.com', 'senha123'),
+('Paulo Cunha', 'paulo.cunha@example.com', 'senha123'),
+('Quésia Nogueira', 'quesia.nogueira@example.com', 'senha123'),
+('Rafael Silva', 'rafael.silva@example.com', 'senha123'),
+('Sabrina Lopes', 'sabrina.lopes@example.com', 'senha123'),
+('Tiago Monteiro', 'tiago.monteiro@example.com', 'senha123');
+

@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* Título */
+h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #222;
+}
+
+
+/* Formulário */
+form {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="password"] {
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+    outline-offset: 2px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6200ee;
+    outline: none;
+}
+
+/* Botão */
+button[type="submit"] {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #6200ee;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3700b3;
+}
+
+/* Link voltar para login */
+a {
+    margin-top: 20px;
+    text-align: center;
+    color: #6200ee;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    form {
+        width: 100%;
+        padding: 25px 20px;
+    }
+}
