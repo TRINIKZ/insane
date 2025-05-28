@@ -88,9 +88,9 @@ src
 ## 💾 Banco de Dados H2
 
 - Console: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
-- JDBC URL: `jdbc:h2:mem:testdb`
-- User: `sa`
-- Password: *(vazio)*
+- JDBC URL: `jdbc:h2:mem:alunos`
+- User: `admin`
+- Password: *admin*
 
 ---
 
@@ -108,7 +108,7 @@ src
 
 ## 🧙‍♂️ Autor
 
-Desenvolvido por **[Seu Nome]** ✨  
+Desenvolvido por **Victor Feitosa, Johnny Wen** ✨  
 Se curtir o projeto, deixe uma ⭐ no GitHub!
 
 ---
