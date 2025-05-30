@@ -6,7 +6,7 @@ Um sistema completo de gerenciamento de **Usuários 👤** e **Carros 🚗**, co
 ---
 
 ## 🧱 Tecnologias Utilizadas
-
+- 🥵 Java 17
 - ☕ Spring Boot 3+
 - 🌿 Spring Data JPA
 - 🎨 Thymeleaf
